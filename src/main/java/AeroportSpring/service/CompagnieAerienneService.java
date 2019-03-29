@@ -1,10 +1,12 @@
 package AeroportSpring.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import AeroportSpring.entity.CompagnieAerienne;
 import AeroportSpring.repository.CompagnieAerienneRepository;
 
+@Service
 public class CompagnieAerienneService {
 	
 	@Autowired

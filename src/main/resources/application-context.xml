@@ -12,9 +12,9 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns="http://www.springframework.org/schema/beans">
 
-	<jpa:repositories base-package="AeroportSpring.repository,AeroportSpring.service"></jpa:repositories>
+	<jpa:repositories base-package="AeroportSpring.repository"></jpa:repositories>
 	<context:annotation-config></context:annotation-config>
-	<context:component-scan base-package="AeroportSpring.entity"></context:component-scan>
+	<context:component-scan base-package="AeroportSpring.service"></context:component-scan>
 	
 	<context:property-placeholder 
 		location="classpath:info.properties"/>

@@ -1,10 +1,12 @@
 package AeroportSpring.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import AeroportSpring.entity.Vol;
 import AeroportSpring.repository.VolRepository;
 
+@Service
 public class VolService {
 		
 	@Autowired
