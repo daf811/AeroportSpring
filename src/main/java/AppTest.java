@@ -13,25 +13,26 @@ public class AppTest {
 		ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("application-context.xml");
 		ClientService repo=ctx.getBean(ClientService.class);
 		
-		ClientEl nicolas= new ClientEl();
-		nicolas.setPrenom("jfije");
-		nicolas.setNom("jpjo");
-	 	repo.insert(nicolas);
-	
-		ClientPhysique mahomet= new ClientPhysique();
-		mahomet.setNom("halla");
-		mahomet.setPrenom("wakbaao");
-		mahomet.setNumeroTel(06052252);
-		mahomet.setNumeroFax(065225252);
-		repo.insert(mahomet);
-			
-			ClientMoral hola= new ClientMoral();
-		hola.setNom("Gringo");
-		hola.setSiret("jufhujf5ud");
-		hola.setNumeroTel(06052252);
-			hola.setNumeroFax(065225252);
-			repo.insert(hola);
-		System.out.println(repo);
+//		ClientEl nicolas= new ClientEl();
+//		nicolas.setPrenom("jfije");
+//		nicolas.setNom("jpjo");
+//	 	repo.insert(nicolas);
+//	
+//		ClientPhysique mahomet= new ClientPhysique();
+//		mahomet.setNom("halla");
+//		mahomet.setPrenom("wakbaao");
+//		mahomet.setNumeroTel(06052252);
+//		mahomet.setNumeroFax(065225252);
+//		repo.insert(mahomet);
+//			
+//			ClientMoral hola= new ClientMoral();
+//		hola.setNom("Gringo");
+//		hola.setSiret("jufhujf5ud");
+//		hola.setNumeroTel(06052252);
+//			hola.setNumeroFax(065225252);
+//			repo.insert(hola);
+//		System.out.println(repo);
+		System.out.println(repo.findAllClientEl());
 		ctx.close();
 	}
 
