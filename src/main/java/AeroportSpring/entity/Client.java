@@ -16,7 +16,8 @@ import javax.persistence.Version;
 
 @Entity
 @Table(name="client")
-@NamedQueries({ @NamedQuery(name = "Client.findAll", query = "select c from Client c") }) 
+@NamedQueries({ @NamedQuery(name = "Client.findAll", query = "select c from Client c") 
+}) 
 @SequenceGenerator(name="seqClient",sequenceName="seq_client",initialValue=100,allocationSize=1)
 
 public abstract class Client {
